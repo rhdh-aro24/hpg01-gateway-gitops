@@ -1,0 +1,15 @@
+app:
+  name: hpg01-poi-gateway-app
+  namespace: hpg01
+  cluster: .apps.kovj5vhc.eastus.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-aro24/hpg01-gateway
+  org: rhdh-aro24
+  name: hpg01-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: hpg01/poi-gateway-app
+  tag: latest
